@@ -143,9 +143,7 @@ class Input
 		document.onClick.listen((MouseEvent event) => clickOrTouch(event,null));
 		document.onTouchStart.listen((TouchEvent event) => clickOrTouch(null,event));
 		
-		new TouchScroller(querySelector('#MobileInventory'),TouchScroller.HORIZONTAL);
-		new TouchScroller(querySelector('#MobileInventoryBag'),TouchScroller.HORIZONTAL);
-		//end mobile specific stuff
+		
 		
 		window.onMessage.listen((MessageEvent event)
 		{

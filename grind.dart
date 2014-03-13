@@ -1,5 +1,4 @@
 import 'package:grinder/grinder.dart' as grinder;
-import 'package:gloss/gloss.dart' as gloss;
 import 'dart:io';
 
 // Important Files
@@ -16,7 +15,7 @@ Directory toolsfolder = new Directory('./tools');
 
 // Compilers
 Function d2js = new grinder.Dart2jsTools().compile;
-Function gl2css = gloss.Gloss.parse;
+//Function gl2css = gloss.Gloss.parse;
 
 void main([List<String> args]) {
   grinder.defineTask('init', taskFunction: init);
@@ -53,7 +52,9 @@ compileJS(grinder.GrinderContext context) {
   new File('./out/main.dart.js').renameSync('./out/main.js');
 }
 
+
 compileCSS(grinder.GrinderContext context) {
+  /*
   String css = '';
   context.log('Compiling CSS from GLOSS');  
   Iterable glosfiles = glosfolder.listSync(recursive: true, followLinks: false)
@@ -64,6 +65,7 @@ compileCSS(grinder.GrinderContext context) {
   }
   css = gl2css(css);
   new File('./out/base.css').writeAsStringSync(css);
+  */
 }
 
 

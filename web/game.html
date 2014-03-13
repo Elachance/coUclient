@@ -13,14 +13,44 @@
       type="image/png"
       href="./assets/system/favicon.ico">
 
+
+<!-- Import Less --!>
+<link rel="stylesheet/less" href="./less/base.less">
+
+
+<!-- Less Compiler - DEV ONLY -->
+<script src="./js/less/less.js"></script>
+
 <!-- Import Stylesheets -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="./base.css">
+  <!--<link rel="stylesheet" href="./base.css"> -->
 	<link id="MobileStyle" rel="stylesheet" href="./mobile.css">
 <!--Import Stylesheets -->
-
 </head>
 <body>
+
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div hidden="true">
+
 
 <div id="MainScreen"> <!--MainScreen is for mobile and desktop clients-->
 	<!-- Footer -->
@@ -376,6 +406,7 @@
 		<div id="SendButton">Send</div>
 	</div>
 </div>
+</div>
 
 <!--Necessary to get around Cross-Domain stuff-->
 <script type="text/javascript">
@@ -386,8 +417,8 @@ function getRoom(dataJSON)
 </script>
 
 <!-- Start the Game up. -->
-  <script type="application/dart" src="main.dart"></script>
-  <script src="packages/browser/dart.js"></script>
+<!--  <script type="application/dart" src="main.dart"></script>
+      <script src="packages/browser/dart.js"></script> -->
 
 </body>
 </html>

@@ -23,24 +23,42 @@
 
 <!-- Import Stylesheets -->
   <!--<link rel="stylesheet" href="./base.css"> -->
-	<link id="MobileStyle" rel="stylesheet" href="./mobile.css">
+  <!--	<link id="MobileStyle" rel="stylesheet" href="./mobile.css"> -->
 <!--Import Stylesheets -->
 </head>
 <body>
 
 
 
+<!--MainScreen is for mobile and desktop clients-->
+ <div id="GameScreen" class="container">
 
-<div class="panel panel-default">
-  <div class="panel-body">
-    Panel content
+  <div id="TopBar" class="row">
+    <header>
+    
+      <div class="col-xs-5 well">energy</div>
+
+
+      <div class="col-sm-2 hidden-xs pull-right well">
+      <div id="CurrDay">Day</div>
+      <div id="CurrTime">Time</div>
+      <div id="CurrDate">Date</div>
+      </div>
+    </header>
   </div>
-  <div class="panel-footer">Panel footer</div>
-</div>
+  
+  <div id="Window" class="row">
+    <div class="col-xs-12 col-sm-8 well">GameScreen</div>
+    <div class="col-xs-6 col-sm-4 well hidden-xs">ChatBar</div>
+  </div>
+ 
+  <div id="Footer" class="row hidden-xs">
+    <footer>Copyright CoU Development Team, Children of Ur is not endorsed by or affiliated with <a href="http://tinyspeck.com/">Tiny Speck, Inc.</a> (The makers of <a href="http://glitchthegame.com">Glitch</a>) in any way.</footer>
+  </div>
+ </div>
 
-
-
-
+  
+  
 
 
 

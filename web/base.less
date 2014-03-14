@@ -1,0 +1,39 @@
+// Base Less file for Children of Ur
+
+// Import bootstrap
+@import "./less/cou-bootstrap.less";
+// Import fontawesome
+@import "./less/fa/font-awesome.less";
+
+// project-specific page resets
+*:not(input){
+   cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -khtml-user-drag: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  
+}
+body, html, .container { /// take all available height
+    height: 100%;
+}
+#mainScreen {
+    height: calc(~'100% - 155px');
+    min-height: calc(~'400px - 155px');
+}
+
+// Import various page elements
+@import "./less/cou/chat.less";
+@import "./less/cou/inventory.less";
+@import "./less/cou/game_screen.less";
+
+@import "./less/cou/soundcloud_widget.less";
+@import "./less/cou/footer.less";
+@import "./less/cou/header.less";

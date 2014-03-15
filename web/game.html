@@ -48,20 +48,27 @@
     
     <!-- Contains the main Game window, chat panel, and the various meters -->
     <div id="mainScreen" class="row">
-        <div id="gameWindow" class="col-sm-11">
+        <div id="gameWindow" class="col-sm-10">
             G
+            <div class="leftcorner back"></div>
+            <img class="leftcorner front" src="./assets/system/leftcornerover.svg"></img>
+            
         </div>
-        <div id="chatPanel" class="hidden-xs col-sm-1">
-            C
+        <div id="chatPanel" class="hidden-xs col-sm-2">
+            Friends<br>
+            <i class="fa fa-clock-o text-warning"></i> Paul<br>
+            <i class="fa fa-circle text-success"></i> Courtney<br>
+            <i class="fa fa-circle text-danger"></i> Robert<br>
+            <i class="fa fa-circle text-success"></i> Forrest<br>
         </div>
     </div>
     
     <!-- Contains the inventory bar, and the soundcloud widget -->
     <div id="lowerBar" class="row">
-        <div id="inventoryBar" class="col-xs-12 col-md-9 col-md-offset-1">
+        <div id="inventoryBar" class="col-xs-12 col-sm-10 col-md-8 col-md-offset-1">
             Inv
         </div>
-        <div id="soundcloud" class="hidden-xs col-sm-3 col-md-2 pull-right">
+        <div id="soundcloud" class="hidden-xs col-sm-2 col-md-2 pull-right">
             <a id="SCLink" target="_blank"><span id="TrackTitle">-</span><br> By <span id="TrackArtist">-</span></a>
             <audio id="MusicBox"></audio><br>
             <a href="http://www.soundcloud.com" target="_blank">

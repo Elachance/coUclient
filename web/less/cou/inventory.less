@@ -1,6 +1,45 @@
 #inventoryBar {
-    background-color:@brand-primary;
-    border-radius:8px;
-    color:@gray-lighter;
-    height:65px;
+    background-color:@body-bg;
+    padding:6px;
+    height:80px;
+    text-align: center;
+    white-space: nowrap;
+	margin-left: auto;
+	margin-right: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
+
+#inventoryBarMobile {
+	display: block;
+	text-align: center;
+	position: absolute;
+	width: 75%;
+    margin-top:5px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: -75px;
+    background: @brand-primary;
+	padding: 3px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
+
+
+
+.inventoryBox {
+  display: inline-block;
+  background-color: #fff;
+  height: 55px;
+  width: 55px;
+  vertical-align: middle;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
